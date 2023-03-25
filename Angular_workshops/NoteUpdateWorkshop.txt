@@ -1,0 +1,40 @@
+Angular 13 —> Angular 15
+
+WorkshopAngular
+
+W1_AngularMeterial
+⁃ ติดตั้งระบบเป็น scss  เพื่อสามารถใช้ angular material ได้
+⁃ ย้ายตัว material ไปอยู่ในตัว modules และทำการ import เก็บไว้เพื่อเรียกใช้งาน 
+⁃ เพิ่ม Css บางส่วน
+
+W2_NodeJs
+Backend
+Index.js
+⁃ แก้ไขตัว model ส่วนของ fs.readdirSync ปรับโครงสร้าง เพิ่ม  Sequelize.DataTypesในส่วนของ forEach
+⁃ ปรับตัว Package ให้เป็น version ล่าสุด
+
+W3_AG_Node
+ไม่มีปัญหา
+
+W4_Deploy 
+ไม่มีปัญหา Build ได้ปกติ
+⁃ Dist
+⁃ Sub-folder
+
+W5_PushNotification
+แจ้งเตือนไม่ทำงาน
+Index.html
+⁃ Onesignal ไม่สามารถใช้งานได้
+
+W6_Chartjs
+Shop.Component.Ts
+⁃ แก้ไข Part  import Chart from "chart.js/auto"; จาก import { Chart } from "chart.js";
+⁃ แก้ไขตัว Options ของ chart ทุกตัว ให้สามารถใช้งานได้ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>frontend</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
+    <script>
+      const OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+        OneSignal.init({
+          appId: "1b56ff27-10aa-4276-b051-8c595ba6f535",
+        });
+
+        OneSignal.getUserId().then((userId) => {
+          console.log("User Id", userId);
+        });
+
+        OneSignal.on("notificationDisplay", (event) => {
+          console.log("Display", event);
+          console.log("Data", event.data);
+        });
+      });
+    </script>
+  </head>
+  <body class="mat-typography">
+    <app-root></app-root>
+  </body>
+</html>

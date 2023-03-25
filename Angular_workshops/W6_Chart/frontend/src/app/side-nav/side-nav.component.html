@@ -1,0 +1,57 @@
+<img
+  class="img-fluid bg-primary shodow-sm"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/500px-Angular_full_color_logo.svg.png"
+  height="200"
+/>
+
+<mat-nav-list dense class="mt-2">
+  <a
+    mat-list-item
+    [routerLink]="['/stock']"
+    routerLinkActive="is_active"
+    (click)="onClickNavClose()"
+  >
+    <span mat-line><span class="mat-h4 title-slide">Stock</span></span>
+    <img
+      matListAvatar
+      src="https://codemobiles.com/biz/images/angular/ic_menu_stock.svg"
+      alt=""
+      width="35"
+    />
+  </a>
+  <a
+    mat-list-item
+    [routerLink]="['/shop']"
+    routerLinkActive="is_active"
+    (click)="onClickNavClose()"
+  >
+    <img
+      matListAvatar
+      src="https://codemobiles.com/biz/images/angular/ic_menu_shop.svg"
+      alt=""
+      width="35"
+    />
+    <span mat-line><span class="mat-h4 title-slide">Shop</span></span>
+  </a>
+
+  <mat-divider class="mt-4"></mat-divider>
+  <p class="mat-subheader">DashBoard</p>
+  <a mat-list-item href="http://www.google.com">
+    <img
+      matListAvatar
+      src="https://codemobiles.com/biz/images/angular/ic_menu_summary.svg"
+      alt=""
+      width="35"
+    />
+    <span mat-line><span class="mat-h4 title-slide">Summary</span></span>
+  </a>
+  <a mat-list-item>
+    <img
+      matListAvatar
+      src="https://codemobiles.com/biz/images/angular/ic_menu_customer.svg"
+      alt=""
+      width="30"
+    />
+    <span mat-line><span class="mat-h4 title-slide">Customer</span></span>
+  </a>
+</mat-nav-list>

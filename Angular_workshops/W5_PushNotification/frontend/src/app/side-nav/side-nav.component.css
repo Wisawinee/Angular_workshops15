@@ -1,0 +1,21 @@
+.bg-primary {
+  background-color: rgb(50, 114, 234);
+}
+.title-slide {
+  position: absolute;
+  top: 0.7em;
+  left: 3.8em;
+  font-size: 1em;
+  font-weight: 400;
+}
+.mat-subheader {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+
+.is_active.is_active {
+  background-color: #ffc107;
+}

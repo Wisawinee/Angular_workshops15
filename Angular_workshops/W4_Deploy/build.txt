@@ -1,0 +1,20 @@
+Angular 12 focus performance on production
+1. Go to file angular.json
+3. Search "budgets"
+4. Increment value of "maximumWarning" = 2mb
+5. Increment value of "maximumError" = 5mb
+#mark: Best practice: Lazy loaded modules
+
+--------------------------------
+
+#mark: ng build default production
+
+
+#1 no sub-folder
+- ng build (dist > ...)
+
+#2 sub-folder
+ng build --base-href [/frontend/] (sub_folder)
+
+option:
+--output-path [folder]
